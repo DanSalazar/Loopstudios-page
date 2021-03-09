@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --white:hsl(0, 0%, 100%);
+    --dark-grey:hsl(0, 0%, 55%);
+    --very-dark-grey:hsl(0, 0%, 41%);
+    --black:hsl(0, 0%, 0%);
+}
+
+body {
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* header */
+
+header {
+    min-width: 100%;
+    background: url(../images/mobile/image-hero.jpg)no-repeat;
+    background-size: cover;
+    height: 820px;
+}
+
+.overlay {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.container__1 {
+    width: 88%;
+    padding: 40px 0px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.show {
+    background: #000;
+}
+
+.navbar__ul {
+    position: absolute;
+    top: 0;
+    margin: 220px 0px 0px 5px;
+    list-style:none;
+    display: none;
+}
+
+.navshow {
+    display: block;
+}
+
+header .navbar__ul li {
+    margin: 0px 0px 30px 0px;
+}
+
+header .navbar__ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 0;
+}
+
+.logo {
+    max-width: 50%;
+}
+
+.header__title {
+    border: 2px solid #fff;
+    margin: 180px 0px;
+    padding: 30px 20px;
+}
+
+.header__title h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 42px;
+    width: 50%;
+    font-weight: lighter;
+}
+
+.hamburger {
+    background: url(../images/icon-hamburger.svg);
+    min-width: 24px;
+    height: 16px;
+}
+
+.close {
+    background: url(../images/icon-close.svg)no-repeat;
+    width: 20px;
+    height: 20px;
+}
+
+.invisible {
+    display: none;
+}
+
+@media only screen and (max-width:350px)  {
+    header .header__title h2 {
+        font-size: 35px;
+    }
+}
+
+
+
+/* main */
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__2 {
+    width: 80%;
+    margin: 40px 0px;
+}
+
+/* interactive */
+
+.interactive {
+    margin: 35px 0px;
+    position: relative;
+}
+
+.interactive__image {
+    background: url(../images/mobile/image-interactive.jpg)no-repeat center/cover;
+    width: 100%;
+    height: 200px;
+}
+
+.interactive__title {
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #000;
+    text-align: center;
+    font-weight: lighter;
+    margin: 45px 0px 15px 0px;
+}
+
+.interactive__text {
+    text-align: center;
+    font-family: 'Alata', sans-serif;
+    color: var(--dark-grey);
+}
+
+/* creations */
+
+.creations {
+    margin: 100px 0px 0px 0px;
+}
+
+.btn1 {
+    display: none;
+}
+
+.creations__title {
+    text-transform: uppercase;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 300;
+    margin: 0px 0px 30px 0px;
+}
+
+.creations__1 {
+    background: url(../images/mobile/image-deep-earth.jpg)no-repeat center/cover;
+}
+
+.creations__2 {
+    background: url(../images/mobile/image-night-arcade.jpg)no-repeat center/cover;
+}
+
+.creations__3 {
+    background: url(../images/mobile/image-soccer-team.jpg)no-repeat center/cover;
+}
+
+.creations__4 {
+    background: url(../images/mobile/image-grid.jpg)no-repeat center/cover;
+}
+
+.creations__5 {
+    background: url(../images/mobile/image-from-above.jpg)no-repeat center/cover;
+}
+
+.creations__6 {
+    background: url(../images/mobile/image-pocket-borealis.jpg)no-repeat center/cover;
+}
+
+.creations__7 {
+    background: url(../images/mobile/image-curiosity.jpg)no-repeat center/cover;
+}
+
+.creations__8 {
+    background: url(../images/mobile/image-fisheye.jpg)no-repeat center/cover;
+}
+
+.creations__children {
+    cursor: pointer;
+    height: 160px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    padding: 1em;
+    margin: 0px 0px 20px 0px;
+}
+
+.creations__children:hover {
+    opacity: 0.6;
+}
+
+.creations__children:hover > span {
+    color: #000;
+}
+
+.creations__children span {
+    color: #fff;
+    width: 50%;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.creations__4 span {
+    width: 20%;
+}
+
+.btn2 {
+    display: block;
+    padding: 12px 40px;
+    border: 1px solid var(--black);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin:auto;
+    background: transparent;
+    letter-spacing: 3px;
+    transition: 0.2s ease-in-out;
+}
+
+.btn2:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* footer */
+
+footer {
+    width: 100%;
+    background: #000;
+    padding: 50px 40px;
+    text-align: center;
+    margin: 50px 0px 0px 0px;
+}
+
+footer .footer__logo {
+    max-width: 40%;
+    margin: 20px 0px 25px 0px;
+}
+
+footer .footer__ul {
+    padding: 0;
+    list-style: none;
+}
+
+footer .footer__ul li {
+    color: #fff;
+    font-family: 'Alata', sans-serif;
+    text-align: center;
+    margin: 0px 0px 25px 0px;
+}
+
+footer .footer__ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    padding: 0px 0px 10px 0px;
+}
+
+footer .container__3 .footer__ul li a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+footer .footer__social {
+    margin: 45px 0px 15px 0px;
+}
+
+footer .footer__social a {
+    margin: 0px 0px 0px 10px;
+    padding: 0px 0px 5px 0px;
+}
+
+footer .footer__social a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+footer .footer__copy {
+    color: var(--dark-grey);
+    font-family: 'Alata', sans-serif;
+    font-size: 14px;
+}
+
+footer .footer__copy a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/* Media queries 768px */
+@media only screen and (min-width: 768px) {
+
+    /* header */
+
+    
+    header .header__title h2 {
+        width: 100%;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    /* main */
+
+    /* interactive */
+
+    .interactive__image {
+        background: url(../images/desktop/image-interactive.jpg)no-repeat;
+        min-width: 100%;
+        height: 550px;
+    }
+
+    .interactive__title {
+        font-size: 40px;
+        margin: 10px 0px 10px 0px;
+        text-align:center;
+    }
+    
+    .interactive__text {
+        font-size: 15px;
+        text-align: center;
+    }
+}
+
+/* Media queries 1024px */
+
+@media only screen and (min-width: 1024px) {
+    
+    /* header */
+    header {
+        background: url(../images/desktop/image-hero.jpg)no-repeat center center/cover;
+        background-color: rgba(0, 0, 0, 0.329);
+        height: 764px;
+    }
+
+    .container__1 {
+        width: 75%;
+    }
+
+    .navbar__ul {
+        display: block;
+        position: relative;
+        margin: 0;
+    }
+
+    header .navbar__ul li {
+        display: inline-block;
+    }
+
+    header .navbar__ul li a {
+        font-size: 16px;
+        margin: 0px 0px 0px 35px;
+        text-transform: capitalize;
+        font-weight: bold;
+        padding: 10px 1px;
+    }
+
+    header .navbar__ul li a:hover {
+        border-bottom: 2px solid #fff;
+    }
+
+    header .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 15px 0px 0px 0px;
+    }
+
+    header .navbar .logo {
+        max-width: 40%;
+        margin: 0px 0px 30px 0px;
+    }
+
+    header .hamburger {
+        display: none;
+    }
+
+    header .header__title {
+        width: 70%;
+        margin: 130px 0px 0px 0px;
+        padding: 40px 30px;
+    }
+    
+    header .header__title h2 {     
+        text-align: start;
+        font-size: 65px;
+        font-weight: lighter;
+        width: 100%;
+    }
+
+    /* main */
+
+    /* interactive */
+
+    .interactive__image {
+        background: url(../images/desktop/image-interactive.jpg)no-repeat;
+        max-width: 200px;
+        height: 550px;
+    }
+
+    .interactive__card {
+        padding: 45px 50px;
+        position: absolute;
+        background: #fff;
+        bottom: 0;
+        right: 0;
+        width: 60%;
+    }
+
+    .interactive__title {
+        font-size: 35px;
+        margin: 10px 0px 10px 0px;
+        text-align:start;
+    }
+    
+    .interactive__text {
+        font-size: 12px;
+        text-align: start;
+    }
+
+    /* creations */
+
+    .container__2 {
+        width: 75%;
+    }
+
+    .creations__top {
+        display: flex;
+        min-width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        margin: 30px 0px 30px 0px;
+    }
+
+    .creations__title {
+        margin:0;
+        font-size: 40px;
+    }
+
+    .btn2 {
+        display: none;
+    }
+
+    .btn1 {
+        padding: 9px 30px;
+        border: 1px solid var(--black);
+        background: transparent;
+        border-radius: 1px;
+        text-transform: uppercase;
+        display: block;
+        margin: 0;
+        letter-spacing: 3px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .btn1:hover {
+        background: #000;
+        color: #fff;
+    }
+
+    .creations__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-rows: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .creations__1 {
+        background: url(../images/desktop/image-deep-earth.jpg)no-repeat;
+    }
+
+    .creations__2 {
+        background: url(../images/desktop/image-night-arcade.jpg)no-repeat;
+    }
+
+    .creations__3 {
+        background: url(../images/desktop/image-soccer-team.jpg)no-repeat;
+    }
+
+    .creations__4 {
+        background: url(../images/desktop/image-grid.jpg)no-repeat;    
+    }
+
+    .creations__5 {
+        background: url(../images/desktop/image-from-above.jpg)no-repeat;
+    }
+
+    .creations__6 {
+        background: url(../images/desktop/image-pocket-borealis.jpg)no-repeat;       
+    }
+
+    .creations__7 {
+        background: url(../images/desktop/image-curiosity.jpg)no-repeat;
+    }
+
+    .creations__8 {
+        background: url(../images/desktop/image-fisheye.jpg)no-repeat;
+    }
+
+    .creations__children {
+        height: 440px;
+        width: 100%;
+        padding: 40px 30px;
+    }
+
+    .creations__children span {
+        font-size: 24px;
+    }
+
+    .creations__4 span {
+        max-width: 60%;
+    }
+
+    /* Footer */
+
+    footer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 35px 0px;
+    }
+
+    .container__3 {
+        width: 75%;
+        display:flex;
+        justify-content: space-between;
+    }
+
+    footer .container__3 .footer__right {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    footer .container__3 .footer__left {
+        display:flex;
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    
+    footer .container__3 .footer__ul li {
+        display: inline-block;
+        margin: 0px 5px 0px 0px;
+    }
+
+    footer .container__3 .footer__ul li a {
+        text-decoration: none;
+        color: #fff;
+        padding: 0px 0px 15px 0px;
+    }
+
+    footer .footer__social {
+        margin: 25px 0px;
+    }
+
+    footer .footer__logo {
+        margin: 25px 0px;
+    }
+
+}
+
+
+/* Media querie 1440px */
+
+@media only screen and (min-width:1215px) {
+
+    /* header */
+
+    header .header__title {
+        width: 60%;
+        margin: 130px 0px 0px 0px;
+        padding: 40px 30px;
+    }
+    
+    header .header__title h2 {
+        font-size: 68px;
+        font-weight: lighter;
+        width: 100%;
+    } 
+
+    /* main */
+
+    /* interactive */
+
+    .interactive__card {
+        padding: 60px 50px;
+        position: absolute;
+        background: #fff;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+    }
+
+    .interactive__title {
+        font-size: 40px;
+        margin: 10px 0px 30px 0px;
+        text-align:start;
+    }
+
+    /* creations */
+    
+    .creations__children span {
+        font-size: 28px;
+        width: 80%;
+    }
+
+    /* footer */
+
+    footer .container__3 .footer__ul li {
+        display: inline-block;
+        margin: 0px 25px 0px 0px;
+    }
+
+}
+
+/* Media querie 300px */
+
+@media only screen and (max-width:300px){
+    
+    .header__title {
+        margin: 180px 0px;
+        padding: 30px 20px;
+    }
+    
+    header .header__title h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 30px;
+    }
+
+}
+
+/* Media querie 1920px */
+@media only screen and (min-width:1920px){
+    
+    .interactive__card {
+        padding: 90px 85px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        background: #fff;
+    }
+
+    .interactive__title {
+        font-size: 50px;
+    }
+
+    .interactive__text {
+        font-size: 16px;
+    }
+}
