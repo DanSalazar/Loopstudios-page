@@ -318,20 +318,18 @@ footer .footer__copy a {
 }
 
 .attribution {
-    width: 100%;
     background: #000;
     text-align: center;
-    padding: 5px 0px 10px 0px;
 }
 
-.attribution span {
-    color: var(--dark-grey);
+.attribution p {
     font-family: 'Alata', sans-serif;
+    color: var(--very-dark-grey);
 }
 
-.attribution span a {
-    text-decoration: none;
+.attribution p a {
     color: #fff;
+    text-decoration: none;
 }
 
 
@@ -341,8 +339,11 @@ footer .footer__copy a {
 
     /* header */
 
+    
     header .header__title h2 {
         width: 100%;
+        font-size: 40px;
+        text-align: center;
     }
 
     /* main */
@@ -426,7 +427,8 @@ footer .footer__copy a {
         padding: 40px 30px;
     }
     
-    header .header__title h2 {
+    header .header__title h2 {     
+        text-align: start;
         font-size: 65px;
         font-weight: lighter;
         width: 100%;
@@ -667,10 +669,30 @@ footer .footer__copy a {
 
 }
 
+/* Media querie 300px */
+
+@media only screen and (max-width:300px){
+    
+    .header__title {
+        margin: 180px 0px;
+        padding: 30px 20px;
+    }
+    
+    header .header__title h2 {
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 30px;
+    }
+    
+    .attribution span {
+        font-size: 12px;
+    }
+
+}
+
 /* Media querie 1920px */
 @media only screen and (min-width:1920px){
-
-
+    
     .interactive__card {
         padding: 90px 85px;
         width: 40%;
