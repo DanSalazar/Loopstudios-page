@@ -317,21 +317,6 @@ footer .footer__copy a {
     text-decoration: none;
 }
 
-.attribution {
-    background: #000;
-    text-align: center;
-}
-
-.attribution p {
-    font-family: 'Alata', sans-serif;
-    color: var(--very-dark-grey);
-}
-
-.attribution p a {
-    color: #fff;
-    text-decoration: none;
-}
-
 
 
 /* Media queries 768px */
@@ -682,10 +667,6 @@ footer .footer__copy a {
         text-transform: uppercase;
         color: #fff;
         font-size: 30px;
-    }
-    
-    .attribution span {
-        font-size: 12px;
     }
 
 }
