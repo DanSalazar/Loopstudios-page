@@ -365,7 +365,7 @@ footer .footer__copy a {
     }
 
     .container__1 {
-        width: 76%;
+        width: 75%;
     }
 
     .navbar__ul {
@@ -452,7 +452,7 @@ footer .footer__copy a {
     /* creations */
 
     .container__2 {
-        width: 70%;
+        width: 75%;
     }
 
     .creations__top {
@@ -553,7 +553,7 @@ footer .footer__copy a {
     }
 
     .container__3 {
-        width: 70%;
+        width: 75%;
         display:flex;
         justify-content: space-between;
     }
