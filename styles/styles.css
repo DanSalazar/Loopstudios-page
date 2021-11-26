@@ -96,6 +96,7 @@ header .navbar__ul li a {
     background: url(../images/icon-hamburger.svg);
     min-width: 24px;
     height: 16px;
+    transition: 0.1s linear;
 }
 
 .close {
