@@ -8,7 +8,7 @@
 
 :root {
     --white:hsl(0, 0%, 100%);
-    --dark-grey:hsl(0, 0%, 55%);
+    --dark-grey: hsla(0, 0%, 40%, 1);
     --very-dark-grey:hsl(0, 0%, 41%);
     --black:hsl(0, 0%, 0%);
 }
